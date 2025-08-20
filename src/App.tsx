@@ -87,6 +87,28 @@ function App() {
             Parcours professionnel
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch">
+            <div className="my-6 bg-orange-100 drop-shadow-lg rounded-4xl p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center">
+              <h3 className="font-semibold text-2xl">Agent technique</h3>
+              <b>
+                <p>Poix-de-Picardie</p>
+              </b>
+              <em>
+                <p>Juillet 2025 - Août 2025</p>
+              </em>
+              <p className="mt-2">Travail pour la commune</p>
+              <p>Travaux manuels variés</p>
+              <em>
+                <b>
+                  <p className="mt-5">Retour d'expérience</p>
+                </b>
+                <p>
+                  Ce poste d’été m’a introduit aux travaux manuels. J'ai pu
+                  apprendre diverses choses, comme tondre la pelouse, utiliser
+                  une binette pour enlever l'herbe sur les trottoirs ou sur les
+                  sols de pierre.
+                </p>
+              </em>
+            </div>
             <div className="my-6 bg-orange-100 drop-shadow-lg rounded-4xl p-5 md:me-10 md:w-2/5 w-4/5">
               <h3 className="font-semibold text-2xl">
                 Stage en développement web
@@ -125,7 +147,7 @@ function App() {
                 <p>SNCF - Gare d'Abancourt</p>
               </b>
               <em>
-                <p>Juillet 2024 - Mars 2024</p>
+                <p>Juillet 2024 - Août 2024</p>
               </em>
               <p className="mt-2">Vente de billets de train et d’abonnements</p>
               <p>Aide et renseignements pour le client</p>

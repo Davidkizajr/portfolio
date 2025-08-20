@@ -76,7 +76,7 @@ function App() {
             beaucoup faire.
           </p>
           <a
-            href="https://vhzwxdse3wsp0ec1.public.blob.vercel-storage.com/CV%20v2.pdf"
+            href="https://vhzwxdse3wsp0ec1.public.blob.vercel-storage.com/CV.pdf"
             target="_blank"
           >
             <button className="access_cv mt-10 w-50">Accéder au CV</button>

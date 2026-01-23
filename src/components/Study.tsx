@@ -36,13 +36,13 @@ export default function Study() {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center">
-      <div className="my-6 p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3 name_loc">
           <h3 className="font-semibold text-2xl">{Study2.name}</h3>
           <p className="font-bold">{Study2.location}</p>
           <p>
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Study2.start
+              Study2.start,
             )}{" "}
             - En cours
           </p>
@@ -63,7 +63,7 @@ export default function Study() {
           {Study2.projects!.filter((project) => project.year === 2).map(
             (project) => (
               <p key={project.id}>{project.name}</p>
-            )
+            ),
           )}
         </div>
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
@@ -78,21 +78,21 @@ export default function Study() {
           {Study2.projects!.filter((project) => project.year === 1).map(
             (project) => (
               <p key={project.id}>{project.name}</p>
-            )
+            ),
           )}
         </div>
       </div>
-      <div className="my-6 p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3 name_loc">
           <h3 className="font-semibold text-2xl">{Study1.name}</h3>
           <p className="font-bold">{Study1.location}</p>
           <p>
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Study1.start
+              Study1.start,
             )}{" "}
             -{" "}
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Study1.end
+              Study1.end,
             )}
           </p>
         </div>

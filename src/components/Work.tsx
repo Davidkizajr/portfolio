@@ -58,7 +58,7 @@ export default function Work() {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center">
-      <div className="my-6 p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
           <h3 className="font-semibold text-2xl">{Job3.role}</h3>
           <p className="font-bold">
@@ -66,11 +66,11 @@ export default function Work() {
           </p>
           <p>
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job3.start
+              Job3.start,
             )}{" "}
             -{" "}
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job3.end
+              Job3.end,
             )}
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function Work() {
           </em>
         </div>
       </div>
-      <div className="my-6 p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
           <h3 className="font-semibold text-2xl">{Job2.role}</h3>
           <p className="font-bold">
@@ -96,11 +96,11 @@ export default function Work() {
           </p>
           <p>
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job2.start
+              Job2.start,
             )}{" "}
             -{" "}
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job2.end
+              Job2.end,
             )}
           </p>
         </div>
@@ -126,7 +126,7 @@ export default function Work() {
           </em>
         </div>
       </div>
-      <div className="my-6 p-5 md:me-10 md:ms-10 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
           <h3 className="font-semibold text-2xl">{Job1.role}</h3>
           <p className="font-bold">
@@ -134,11 +134,11 @@ export default function Work() {
           </p>
           <p>
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job1.start
+              Job1.start,
             )}{" "}
             -{" "}
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
-              Job1.end
+              Job1.end,
             )}
           </p>
         </div>

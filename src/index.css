@@ -47,21 +47,6 @@ button {
   cursor: pointer;
 }
 
-.access_cv {
-  background-color: oklch(80.9% 0.105 251.813);
-  animation: blink 5s linear infinite;
-}
-.access_cv:hover {
-  background-color: oklch(54.6% 0.245 262.881);
-  color: white;
-}
-
-@keyframes blink {
-  50% {
-    background-color: oklch(54.6% 0.245 262.881);
-  }
-}
-
 .link_social {
   color: white;
   transition-duration: 0.4s;

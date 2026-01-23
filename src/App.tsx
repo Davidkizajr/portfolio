@@ -67,12 +67,6 @@ function App() {
             développement web. La création de sites web est ce que j'aime
             beaucoup faire.
           </p>
-          <a
-            href="https://vhzwxdse3wsp0ec1.public.blob.vercel-storage.com/CV.pdf"
-            target="_blank"
-          >
-            <button className="access_cv mt-10 w-50">Accéder au CV</button>
-          </a>
         </div>
         <div className="flex flex-col text-center justify-center items-center mt-10">
           <h2 className="font-bold text-4xl" id="Parcours">

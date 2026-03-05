@@ -26,6 +26,7 @@ export default function Study() {
       { id: 2, year: 1, name: "Création d’une base de données" },
       { id: 3, year: 2, name: "Création d’un site d’entreprise" },
       { id: 4, year: 2, name: "Création d’un site de cartographie" },
+      { id: 5, year: 3, name: "Tetristoria (Tetris avec thème historique)" },
     ],
   };
 
@@ -46,6 +47,19 @@ export default function Study() {
             )}{" "}
             - En cours
           </p>
+        </div>
+        <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
+          <b>
+            <p className="mt-2">
+              3<sup>ème</sup> année
+            </p>
+            <p>Projet réalisé</p>
+          </b>
+          {Study2.projects!.filter((project) => project.year === 3).map(
+            (project) => (
+              <p key={project.id}>{project.name}</p>
+            ),
+          )}
         </div>
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
           <b>

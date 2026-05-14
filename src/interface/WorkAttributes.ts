@@ -8,7 +8,7 @@ export default interface WorkAttributes {
   end: Date;
   description: string[];
   technologies?: Technology[];
-  opinion: string;
+  opinion?: string;
 }
 
 export interface Technology {

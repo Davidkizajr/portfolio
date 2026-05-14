@@ -1,6 +1,13 @@
 import { FaJs } from "react-icons/fa6";
 import type WorkAttributes from "../interface/WorkAttributes";
-import { FaBootstrap, FaCss3, FaHtml5, FaPhp } from "react-icons/fa";
+import {
+  FaBootstrap,
+  FaCss3,
+  FaHtml5,
+  FaPhp,
+  FaLaravel,
+  FaGit,
+} from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
 import { SiJquery } from "react-icons/si";
 
@@ -51,6 +58,26 @@ export default function Work() {
       "Ce poste d’été m’a introduit aux travaux manuels. J'ai pu apprendre diverses choses, comme tondre la pelouse, utiliser une binette pour enlever l'herbe sur les trottoirs ou sur les sols de pierre.",
   };
 
+  const Job4: WorkAttributes = {
+    role: "Stage en développement web",
+    location: "Télétravail",
+    company: "Lalachante",
+    start: new Date(2026, 3),
+    end: new Date(2026, 6),
+    description: [
+      "Développement d’un site dans le framework Laravel",
+      "Versionnage des tickets avec GitHub",
+    ],
+    technologies: [
+      { name: "PHP", icon: FaPhp },
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS", icon: FaCss3 },
+      { name: "JavaScript", icon: FaJs },
+      { name: "Laravel", icon: FaLaravel },
+      { name: "Git", icon: FaGit },
+    ],
+  };
+
   const DateFormatOptions: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
@@ -58,6 +85,36 @@ export default function Work() {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
+        <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
+          <h3 className="font-semibold text-2xl">{Job4.role}</h3>
+          <p className="font-bold">
+            {Job4.company} - {Job4.location}
+          </p>
+          <p>
+            {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
+              Job4.start,
+            )}{" "}
+            -{" "}
+            {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
+              Job4.end,
+            )}
+          </p>
+        </div>
+        <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
+          {Job4.description.map((element: string) => (
+            <p key={4}>{element}</p>
+          ))}
+          <p>Technologies utilisées :</p>
+          <ul className="list-inside flex items-center justify-center">
+            {Job4.technologies?.map((tech) => (
+              <li key={tech.name}>
+                <tech.icon className="me-2 text-3xl" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
           <h3 className="font-semibold text-2xl">{Job3.role}</h3>

@@ -76,6 +76,8 @@ export default function Work() {
       { name: "Laravel", icon: FaLaravel },
       { name: "Git", icon: FaGit },
     ],
+    opinion:
+      "Ce stage m'a permis de m'avancer dans le développement web. J'ai appris une méthode de travail plus sécurisée, le processus de refactorisation et l'applications des bonnes pratiques de programmation.",
   };
 
   const DateFormatOptions: Intl.DateTimeFormatOptions = {
@@ -113,6 +115,14 @@ export default function Work() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">
+          <em>
+            <b>
+              <p className="mt-5">Retour d'expérience</p>
+            </b>
+            <p>{Job4.opinion}</p>
+          </em>
         </div>
       </div>
       <div className="my-6 p-5 md:me-5 md:ms-5 md:w-2/5 w-4/5 flex flex-col justify-center gap-4">

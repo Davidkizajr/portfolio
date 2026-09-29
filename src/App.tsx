@@ -60,7 +60,9 @@ function App() {
             Bonjour ! Je suis <em>David Kizayilawoko</em>.
           </p>
           <p>
-            Je suis actuellement étudiant en BUT Informatique à l'IUT d'Amiens.
+            Je suis actuellement en recherche d'alternance pour mon Mastère
+            professionnel manager en architecture et applications logicielles
+            des systèmes d'information dans le CESI de Rouen.
           </p>
           <p className="mt-5">
             Je suis passionné d'informatique, surtout dans le domaine du

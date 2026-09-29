@@ -17,6 +17,7 @@ export default function Study() {
     name: "BUT Informatique",
     location: "IUT Amiens | UPJV",
     start: new Date(2023, 8),
+    end: new Date(2026, 7),
     specialization: [
       { id: 3, name: "Réalisation d'applications" },
       { id: 4, name: "Conception, Développement, Validation" },
@@ -45,7 +46,10 @@ export default function Study() {
             {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
               Study2.start,
             )}{" "}
-            - En cours
+            -{" "}
+            {new Intl.DateTimeFormat("fr-FR", DateFormatOptions).format(
+              Study2.end,
+            )}
           </p>
         </div>
         <div className="bg-slate-200 drop-shadow-lg rounded-4xl p-3">

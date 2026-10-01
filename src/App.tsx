@@ -1,4 +1,5 @@
 import { CiMail } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa6";
@@ -92,6 +93,13 @@ function App() {
               target="_blank"
             >
               <CiMail className="me-5" size={64} />
+            </a>
+            <a
+              className="link_social"
+              href="https://github.com/Davidkizajr"
+              target="_blank"
+            >
+              <FaGithub className="me-5" size={64} />
             </a>
             <a
               className="link_social"

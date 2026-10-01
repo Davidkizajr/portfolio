@@ -59,11 +59,6 @@ function App() {
           <p className="mt-10">
             Bonjour ! Je suis <em>David Kizayilawoko</em>.
           </p>
-          <p>
-            Je suis actuellement en recherche d'alternance pour mon Mastère
-            professionnel manager en architecture et applications logicielles
-            des systèmes d'information dans le CESI de Rouen.
-          </p>
           <p className="mt-5">
             Je suis passionné d'informatique, surtout dans le domaine du
             développement web. La création de sites web est ce que j'aime
